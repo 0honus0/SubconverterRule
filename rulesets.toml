@@ -30,33 +30,33 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 group = "🎥 NETFLIX"
 ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Video/Netflix.list"
 
-[[rulesets]]
-group = "🌍 国外媒体"
-ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list"
+# [[rulesets]]
+# group = "🌍 国外媒体"
+# ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/iQiyi.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/iQiyi.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Letv.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Letv.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/MOO.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/MOO.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Tencent Video.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Tencent Video.list"
 
-[[rulesets]]
-group = "🌏 国内媒体"
-ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Youku.list"
+# [[rulesets]]
+# group = "🌏 国内媒体"
+# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Youku.list"
 
 [[rulesets]]
 group = "📲 电报信息"
