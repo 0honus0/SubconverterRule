@@ -11,27 +11,12 @@ url = "http://www.gstatic.com/generate_204"
 interval = 300
 
 [[custom_groups]]
-name = "🎥 NETFLIX"
-type = "select"
-rule = [
-    "[]🔰 节点选择",
-    ".*"
-]
-
-[[custom_groups]]
 name = "🌍 国外媒体"
 type = "select"
 rule = ["[]🔰 节点选择",
 "[]♻️ 自动选择",
 "[]🎯 全球直连",
 ".*"]
-
-# [[custom_groups]]
-# name = "🌏 国内媒体"
-# type = "select"
-# rule = ["[]🔰 节点选择",
-# "[]🎯 全球直连",
-# ".*"]
 
 [[custom_groups]]
 name = "Ⓜ️ 微软服务"
@@ -72,3 +57,19 @@ rule = ["[]🔰 节点选择",
 "[]🎯 全球直连",
 "[]♻️ 自动选择",
 ".*"]
+
+
+# [[custom_groups]]
+# name = "🎥 NETFLIX"
+# type = "select"
+# rule = [
+#     "[]🔰 节点选择",
+#     ".*"
+# ]
+
+# [[custom_groups]]
+# name = "🌏 国内媒体"
+# type = "select"
+# rule = ["[]🔰 节点选择",
+# "[]🎯 全球直连",
+# ".*"]
