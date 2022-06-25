@@ -1,6 +1,6 @@
 [[rulesets]]
 group = "🔰 节点选择"
-ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/proxy"
+ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Proxy"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -8,11 +8,11 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalA
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
+ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Direct"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -25,10 +25,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Micros
 [[rulesets]]
 group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
-
-[[rulesets]]
-group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
 
 [[rulesets]]
 group = "🌍 国外媒体"
