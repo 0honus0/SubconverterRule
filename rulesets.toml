@@ -2,6 +2,11 @@
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Proxy"
 
+# 电报信息
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Direct"
@@ -29,10 +34,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 [[rulesets]]
 group = "🌍 国外媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
-
-[[rulesets]]
-group = "📲 电报信息"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
 
 [[rulesets]]
 group = "🍎 苹果服务"
