@@ -7,7 +7,7 @@ ipv6: {{ default(global.clash.ipv6, "false" }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090
-{% if default(request.clash.dns, "") == "1" or global.clash.dns == "1" %}
+{% if default(request.clash.dns, "") == "1" or default(global.clash.dns, ") == "1" %}
 dns:
   enable: true
   listen: ::1053
