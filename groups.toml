@@ -15,8 +15,6 @@ name = "🎥 NETFLIX"
 type = "select"
 rule = [
     "[]🔰 节点选择",
-    "[]♻️ 自动选择",
-    "[]🎯 全球直连",
     ".*"
 ]
 
@@ -27,13 +25,6 @@ rule = ["[]🔰 节点选择",
 "[]♻️ 自动选择",
 "[]🎯 全球直连",
 ".*"]
-
-[[custom_groups]]
-name = "🌏 国内媒体"
-type = "select"
-rule = ["[]🎯 全球直连",
-"(HGC|HKBN|PCCW|HKT|深台|彰化|新北|台|hk|港|tw)",
-"[]🔰 节点选择"]
 
 [[custom_groups]]
 name = "Ⓜ️ 微软服务"
