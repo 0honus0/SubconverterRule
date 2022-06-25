@@ -3,7 +3,7 @@
 mixed-port: {{ default(global.clash.mixed-port, "7890") }}
 tproxy-port: {{ default(global.clash.tproxy-port, "7893" )}}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
-ipv6: {{ default(global.clash.ipv6, "false" }}
+ipv6: {{ default(global.clash.ipv6, "false") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090

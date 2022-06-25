@@ -23,7 +23,7 @@ enable_filter = false
 
 #default_external_config = "config/example_external_config.toml"
 
-base_path = "base"
+base_path = ""
 clash_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
 surge_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
 surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
@@ -120,26 +120,6 @@ import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rul
 
 [template]
 template_path = ""
-
-[[template.globals]]
-key = "clash.mixed-port"
-value = "7890"
-
-[[template.globals]]
-key = "clash.tproxy-port"
-value = "7893"
-
-[[template.globals]]
-key = "clash.allow_lan"
-value = "true"
-
-[[template.globals]]
-key = "clash.ipv6"
-value = "false"
-
-[[template.globals]]
-key = "clash.log_level"
-value = "info"
 
 [[template.globals]]
 key = "clash.dns"
