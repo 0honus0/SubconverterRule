@@ -1,32 +1,17 @@
 version = 1
 [common]
-# API mode, set to true to prevent loading local subscriptions or serving local files directly
 api_mode = false
-
-# Access token used for performing critical action through Web interface
-api_access_token = "password"
-
-# Default URLs, used when no URL is provided in request, use "|" to separate multiple subscription links, supports local files/URL
+api_access_token = ""
 default_url = []
-
-# Insert subscription links to requests. Can be used to add node(s) to all exported subscriptions.
 enable_insert = true
-# URLs to insert before subscription links, can be used to add node(s) to all exported subscriptions, supports local files/URL
 insert_url = [""]
-# Prepend inserted URLs to subscription links. Nodes in insert_url will be added to groups first with non-group-specific match pattern.
 prepend_insert_url = true
-
-# Exclude nodes which remarks match the following patterns. Supports regular expression.
 exclude_remarks = ["(到期|剩余流量|时间|官网|产品)"]
 
 # Only include nodes which remarks match the following patterns. Supports regular expression.
 #include_remarks = ["V3.*港"]
 
-# Enable script support for filtering nodes
 enable_filter = false
-# Script used for filtering nodes. Supports inline script and script path. A "filter" function with 1 argument which is a node should be defined in the script.
-# Example: Inline script: Set value to content of script.
-#          Script path: Set value to "path:/path/to/script.js".
 #filter_script = '''
 #function filter(node) {
 #    const info = JSON.parse(node.ProxyInfo);
@@ -36,50 +21,23 @@ enable_filter = false
 #}
 #'''
 
-# Setting an external config file as default when none is specified, supports local files/URL
-# default_external_config = "config/example_external_config.toml"
+#default_external_config = "config/example_external_config.toml"
 
-# The file scope limit of the 'rule_base' options in external configs.
 base_path = "base"
-
-# Clash config base used by the generator, supports local files/URL
-clash_rule_base = "base/all_base.tpl"
-
-# Surge config base used by the generator, supports local files/URL
-surge_rule_base = "base/all_base.tpl"
-
-# Surfboard config base used by the generator, supports local files/URL
-surfboard_rule_base = "base/all_base.tpl"
-
-# Mellow config base used by the generator, supports local files/URL
-mellow_rule_base = "base/all_base.tpl"
-
-# Quantumult config base used by the generator, supports local files/URL
-quan_rule_base = "base/all_base.tpl"
-
-# Quantumult X config base used by the generator, supports local files/URL
-quanx_rule_base = "base/all_base.tpl"
-
-# Loon config base used by the generator, supports local files/URL
-loon_rule_base = "base/all_base.tpl"
-
-# Shadowsocks Android config base used by the generator, supports local files/URL
-sssub_rule_base = "base/all_base.tpl"
-
-# Proxy used to download rulesets or subscriptions, set to NONE or empty to disable it, set to SYSTEM to use system proxy.
-# Accept cURL-supported proxies (http:// https:// socks4a:// socks5://)
-
+clash_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+surge_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+mellow_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+quan_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+quanx_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+loon_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+sssub_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
 proxy_config = "SYSTEM"
 proxy_ruleset = "SYSTEM"
 proxy_subscription = "NONE"
-
-# Append a proxy type string ([SS] [SSR] [VMess]) to node remark.
-append_proxy_type = false
+append_proxy_type = true
 
 [[userinfo.stream_rule]]
-# Rules to extract stream data from node
-# Format: full_match_regex|new_format_regex
-# where new_format_regex should be like "total=$1&left=$2&used=$3"
 match = '^剩余流量：(.*?)\|总流量：(.*)$'
 replace = 'total=$2&left=$1'
 
@@ -96,9 +54,6 @@ match = '^.*剩余(.*?)(?:\s*?)@(?:.*)$'
 replace = 'total=$1'
 
 [[userinfo.time_rule]]
-# Rules to extract expire time data from node
-# Format: full_match_regex|new_format_regex
-# where new_format_regex should follow this example: yyyy:mm:dd:hh:mm:ss
 match = '^过期时间：(\d+)-(\d+)-(\d+) (\d+):(\d+):(\d+)$'
 replace = '$1:$2:$3:$4:$5:$6'
 
@@ -117,8 +72,6 @@ skip_cert_verify_flag = true
 tls13_flag = false
 
 sort_flag = false
-# Script used for sorting nodes. A "compare" function with 2 arguments which are the 2 nodes to be compared should be defined in the script. Supports inline script and script path.
-# Examples can be seen at the filter_script option in [common] section.
 #sort_script = '''
 #function compare(node_a, node_b) {
 #   return info_a.Remark > info_b.Remark;
@@ -129,12 +82,6 @@ filter_deprecated_nodes = false
 append_sub_userinfo = true
 clash_use_new_field_name = true
 
-# Generate style of the proxies section of Clash subscriptions.
-# Supported styles: block, flow, compact
-# Block: - name: name1    Flow: - {name: name1, key: value}    Compact: [{name: name1, key: value},{name: name2, key: value}]
-#         key: value           - {name: name2, key: value}
-#       - name: name2
-#         key: value
 clash_proxies_style = "flow"
 
 [[node_pref.rename_node]]
@@ -142,23 +89,13 @@ match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
 replace = "$1x"
 
 [managed_config]
-# Append a '#!MANAGED-CONFIG' info to Surge configurations
 write_managed_config = true
-
-# Address prefix for MANAGED-CONFIG info, without the trailing "/".
 managed_config_prefix = "http://127.0.0.1:25500"
-
-# Managed config update interval in seconds, determine how long the config will be updated.
 config_update_interval = 86400
-
-# If config_update_strict is set to true, Surge will require a force update after the interval.
 config_update_strict = false
-
-# Device ID to be written to rewrite scripts for some version of Quantumult X 
 quanx_device_id = ""
 
 [surge_external_proxy]
-#surge_ssr_path = "/usr/bin/ssr-local"
 resolve_hostname = true
 
 [emojis]
@@ -168,53 +105,25 @@ remove_old_emoji = true
 [[emojis.emoji]]
 #match = '(流量|时间|应急)'
 #emoji = '🏳️‍🌈'
-import = "snippets/emoji.toml"
-
-# [[custom_groups]]
-# name = "Auto"
-# type = "url-test"
-# rule = [".*"]
-# url = "http://www.gstatic.com/generate_204"
-# interval = 300
-# tolerance = 150
-# lazy = true
-
-# [[custom_groups]]
-# name = "Proxy"
-# type = "select"
-# rule = [".*", "[]DIRECT"]
-# disable_udp = false
-
-# [[custom_groups]]
-# name = "LoadBalance"
-# type = "load-balance"
-# rule = [".*", "[]Proxy", "[]DIRECT"]
-# interval = 100
-# strategy = "consistent-hashing"
-# url = "http://www.gstatic.com/generate_204"
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/emoji.toml"
 
 [[custom_groups]]
-import = "snippets/groups.toml"
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/groups.toml"
 
 [ruleset]
-# Enable generating rules with rulesets
 enabled = true
-
-# Overwrite the existing rules in rule_base
 overwrite_original_rules = false
-
-# Perform a ruleset update on request
 update_ruleset_on_request = false
 
-# [[rulesets]]
-# group = "Proxy"
-# ruleset = "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list"
-# type = "surge-ruleset"
-# interval = 86400
-
 [[rulesets]]
-import = "snippets/rulesets.toml"
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rulesets.toml"
 
+; [template]
+; template_path = ""
+
+; [[template.globals]]
+; key = "clash.dns"
+; value = "1"
 [template]
 template_path = ""
 
@@ -295,10 +204,6 @@ uri = "/test"
 target = "/render?path=templates/test.tpl"
 
 #[[tasks]]
-#name = "tick"
-#cronexp = "0/10 * * * * ?"
-#path = "tick.js"
-#timeout = 3
 
 [server]
 listen = "0.0.0.0"
