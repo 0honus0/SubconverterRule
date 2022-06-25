@@ -1,15 +1,26 @@
 {% if request.target == "clash" or request.target == "clashr" %}
 
-port: {{ default(global.clash.http_port, "7890") }}
-socks-port: {{ default(global.clash.socks_port, "7891") }}
+mixed-port: {{ default(global.clash.mixed-port, "7890") }}
+tproxy-port: {{ default(global.clash.tproxy-port, "7893" )}}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
+ipv6: {{ default(global.clash.ipv6, "false" }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090
-{% if default(request.clash.dns, "") == "1" %}
+{% if default(request.clash.dns, "") == "1"  %}
 dns:
   enable: true
-  listen: :1053
+  listen: ::1053
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+      - https://rubyfish.cn/dns-query
+      - https://doh.opendns.com/dns-query
+      - https://dns.adguard.com/dns-query
+      - https://doh.dns.sb/dns-query
+      - https://dns64.cloudflare-dns.com/dns-query
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~

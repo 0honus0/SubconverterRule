@@ -122,16 +122,20 @@ import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rul
 template_path = ""
 
 [[template.globals]]
-key = "clash.ipv6"
-value = "false"
-
-[[template.globals]]
 key = "clash.mixed-port"
 value = "7890"
 
 [[template.globals]]
 key = "clash.tproxy-port"
 value = "7893"
+
+[[template.globals]]
+key = "clash.allow_lan"
+value = "true"
+
+[[template.globals]]
+key = "clash.ipv6"
+value = "false"
 
 [[template.globals]]
 key = "clash.log_level"
