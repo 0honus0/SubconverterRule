@@ -4,15 +4,15 @@ ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Pr
 
 [[rulesets]]
 group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Direct"
+
+[[rulesets]]
+group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
-
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/Direct"
 
 [[rulesets]]
 group = "🎯 全球直连"
