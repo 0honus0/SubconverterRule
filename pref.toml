@@ -85,8 +85,7 @@ clash_use_new_field_name = true
 clash_proxies_style = "flow"
 
 [[node_pref.rename_node]]
-match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
-replace = "$1x"
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rename.toml"
 
 [managed_config]
 write_managed_config = true
@@ -99,7 +98,7 @@ quanx_device_id = ""
 resolve_hostname = true
 
 [emojis]
-add_emoji = false
+add_emoji = true
 remove_old_emoji = true
 
 [[emojis.emoji]]
@@ -108,7 +107,7 @@ remove_old_emoji = true
 import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/emoji.toml"
 
 [[custom_groups]]
-import = "https://cdn.jsdelivr.net/gh/0honus0/Subconverter_Rule@master/groups.toml"
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/groups.toml"
 
 [ruleset]
 enabled = true
