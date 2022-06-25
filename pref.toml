@@ -141,6 +141,10 @@ value = "false"
 key = "clash.log_level"
 value = "info"
 
+[[template.globals]]
+key = "clash.dns"
+value = "1"
+
 [[aliases]]
 uri = "/clash"
 target = "/sub?target=clash"
