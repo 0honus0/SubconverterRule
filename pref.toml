@@ -108,7 +108,7 @@ remove_old_emoji = true
 import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/emoji.toml"
 
 [[custom_groups]]
-import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/groups.toml"
+import = "https://cdn.jsdelivr.net/gh/0honus0/Subconverter_Rule@master/groups.toml"
 
 [ruleset]
 enabled = true
