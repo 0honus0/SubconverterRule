@@ -35,7 +35,7 @@ sssub_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/m
 proxy_config = "SYSTEM"
 proxy_ruleset = "SYSTEM"
 proxy_subscription = "NONE"
-append_proxy_type = true
+append_proxy_type = false
 
 [[userinfo.stream_rule]]
 match = '^剩余流量：(.*?)\|总流量：(.*)$'
@@ -192,7 +192,7 @@ port = 25500
 serve_file_root = "web"
 
 [advanced]
-log_level = "debug"
+log_level = "info"
 print_debug_info = true
 max_pending_connections = 10240
 max_concurrent_threads = 4

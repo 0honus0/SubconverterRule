@@ -60,7 +60,7 @@ rule = ["[]🔰 节点选择",
 [[custom_groups]]
 name = "🎯 全球直连"
 type = "select"
-rule = ["[]DIRECT"]
+rule = ["[]DIRECT", ".*"]
 
 [[custom_groups]]
 name = "🛑 全球拦截"
