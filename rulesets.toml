@@ -1,4 +1,8 @@
 [[rulesets]]
+group = "🔰 节点选择"
+ruleset = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/proxy"
+
+[[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
 
@@ -28,7 +32,7 @@ ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/re
 
 [[rulesets]]
 group = "🌍 国外媒体"
-ruleset = "rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
 
 [[rulesets]]
 group = "📲 电报信息"
@@ -41,11 +45,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.
 [[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
-
-
-# [[rulesets]]
-# group = "🔰 节点选择"
-# ruleset = "rules/DivineEngine/Surge/Ruleset/Global.list"
 
 # [[rulesets]]
 # group = "🎥 NETFLIX"
