@@ -7,21 +7,7 @@ ipv6: {{ default(global.clash.ipv6, "false" }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090
-{% if default(request.clash.dns, "") == "1"  %}
-dns:
-  enable: true
-  listen: ::1053
-  ipv6: false
-  enhanced-mode: redir-host
-  nameserver:
-      - https://dns.alidns.com/dns-query
-      - https://doh.pub/dns-query
-      - https://rubyfish.cn/dns-query
-      - https://doh.opendns.com/dns-query
-      - https://dns.adguard.com/dns-query
-      - https://doh.dns.sb/dns-query
-      - https://dns64.cloudflare-dns.com/dns-query
-{% endif %}
+
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
