@@ -1,0 +1,208 @@
+version = 1
+[common]
+api_mode = false
+api_access_token = "password"
+default_url = []
+enable_insert = true
+insert_url = [""]
+prepend_insert_url = true
+exclude_remarks = ["(到期|剩余流量|时间|官网|产品)"]
+
+# Only include nodes which remarks match the following patterns. Supports regular expression.
+#include_remarks = ["V3.*港"]
+
+enable_filter = false
+#filter_script = '''
+#function filter(node) {
+#    const info = JSON.parse(node.ProxyInfo);
+#    if(info.EncryptMethod.includes('chacha20'))
+#	    return true;
+#    return false;
+#}
+#'''
+
+default_external_config = "config/example_external_config.toml"
+base_path = "base"
+clash_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+surge_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+mellow_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+quan_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+quanx_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+loon_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+sssub_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+proxy_config = "SYSTEM"
+proxy_ruleset = "SYSTEM"
+proxy_subscription = "NONE"
+append_proxy_type = true
+
+[[userinfo.stream_rule]]
+match = '^剩余流量：(.*?)\|总流量：(.*)$'
+replace = 'total=$2&left=$1'
+
+[[userinfo.stream_rule]]
+match = '^剩余流量：(.*?) (.*)$'
+replace = 'total=$1&left=$2'
+
+[[userinfo.stream_rule]]
+match = '^Bandwidth: (.*?)/(.*)$'
+replace = 'used=$1&total=$2'
+
+[[userinfo.stream_rule]]
+match = '^.*剩余(.*?)(?:\s*?)@(?:.*)$'
+replace = 'total=$1'
+
+[[userinfo.time_rule]]
+match = '^过期时间：(\d+)-(\d+)-(\d+) (\d+):(\d+):(\d+)$'
+replace = '$1:$2:$3:$4:$5:$6'
+
+[[userinfo.time_rule]]
+match = '^到期时间:(\d+)-(\d+)-(\d+)$'
+replace = '$1:$2:$3:0:0:0'
+
+[[userinfo.time_rule]]
+match = '^Smart Access expire: (\d+)/(\d+)/(\d+)$'
+replace = '$1:$2:$3:0:0:0'
+
+[node_pref]
+udp_flag = true
+tcp_fast_open_flag = false
+skip_cert_verify_flag = true
+tls13_flag = false
+
+sort_flag = false
+#sort_script = '''
+#function compare(node_a, node_b) {
+#   return info_a.Remark > info_b.Remark;
+#}
+#'''
+
+filter_deprecated_nodes = false
+append_sub_userinfo = true
+clash_use_new_field_name = true
+
+clash_proxies_style = "flow"
+
+[[node_pref.rename_node]]
+match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
+replace = "$1x"
+
+[managed_config]
+write_managed_config = true
+managed_config_prefix = "http://127.0.0.1:25500"
+config_update_interval = 86400
+config_update_strict = false
+quanx_device_id = ""
+
+[surge_external_proxy]
+resolve_hostname = true
+
+[emojis]
+add_emoji = false
+remove_old_emoji = true
+
+[[emojis.emoji]]
+#match = '(流量|时间|应急)'
+#emoji = '🏳️‍🌈'
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/emoji.toml"
+
+[[custom_groups]]
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/groups.toml"
+
+[ruleset]
+enabled = true
+overwrite_original_rules = false
+update_ruleset_on_request = false
+
+[[rulesets]]
+import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rulesets.toml"
+
+[template]
+template_path = ""
+
+[[template.globals]]
+key = "clash.dns"
+value = "1"
+
+[[aliases]]
+uri = "/clash"
+target = "/sub?target=clash"
+
+[[aliases]]
+uri = "/clashr"
+target = "/sub?target=clashr"
+
+[[aliases]]
+uri = "/surge"
+target = "/sub?target=surge"
+
+[[aliases]]
+uri = "/quan"
+target = "/sub?target=quan"
+
+[[aliases]]
+uri = "/quanx"
+target = "/sub?target=quanx"
+
+[[aliases]]
+uri = "/mellow"
+target = "/sub?target=mellow"
+
+[[aliases]]
+uri = "/surfboard"
+target = "/sub?target=surfboard"
+
+[[aliases]]
+uri = "/loon"
+target = "/sub?target=loon"
+
+[[aliases]]
+uri = "/ss"
+target = "/sub?target=ss"
+
+[[aliases]]
+uri = "/ssd"
+target = "/sub?target=ssd"
+
+[[aliases]]
+uri = "/sssub"
+target = "/sub?target=sssub"
+
+[[aliases]]
+uri = "/ssr"
+target = "/sub?target=ssr"
+
+[[aliases]]
+uri = "/v2ray"
+target = "/sub?target=v2ray"
+
+[[aliases]]
+uri = "/trojan"
+target = "/sub?target=trojan"
+
+[[aliases]]
+uri = "/test"
+target = "/render?path=templates/test.tpl"
+
+#[[tasks]]
+
+[server]
+listen = "0.0.0.0"
+port = 25500
+serve_file_root = "web"
+
+[advanced]
+log_level = "debug"
+print_debug_info = true
+max_pending_connections = 10240
+max_concurrent_threads = 4
+max_allowed_rulesets = 64
+max_allowed_rules = 0
+max_allowed_download_size = 0
+enable_cache = true
+cache_subscription = 60
+cache_config = 300
+cache_ruleset = 21600
+script_clean_context = true
+async_fetch_ruleset = false
+skip_failed_links = true
