@@ -21,8 +21,9 @@ enable_filter = false
 #}
 #'''
 
-default_external_config = "config/example_external_config.toml"
-base_path = "base"
+#default_external_config = "config/example_external_config.toml"
+
+base_path = ""
 clash_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
 surge_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
 surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
