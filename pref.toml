@@ -24,14 +24,14 @@ enable_filter = false
 #default_external_config = "config/example_external_config.toml"
 
 base_path = ""
-clash_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-surge_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-mellow_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-quan_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-quanx_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-loon_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
-sssub_rule_base = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/all_base.tpl"
+clash_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+surge_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+surfboard_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+mellow_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+quan_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+quanx_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+loon_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
+sssub_rule_base = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/all_base.tpl"
 proxy_config = "SYSTEM"
 proxy_ruleset = "SYSTEM"
 proxy_subscription = "NONE"
@@ -85,7 +85,7 @@ clash_use_new_field_name = true
 clash_proxies_style = "flow"
 
 [[node_pref.rename_node]]
-import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rename.toml"
+import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/rename.toml"
 
 [managed_config]
 write_managed_config = true
@@ -104,10 +104,10 @@ remove_old_emoji = true
 [[emojis.emoji]]
 #match = '(流量|时间|应急)'
 #emoji = '🏳️‍🌈'
-import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/emoji.toml"
+import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/emoji.toml"
 
 [[custom_groups]]
-import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/groups.toml"
+import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/groups.toml"
 
 [ruleset]
 enabled = true
@@ -115,7 +115,7 @@ overwrite_original_rules = false
 update_ruleset_on_request = false
 
 [[rulesets]]
-import = "https://raw.githubusercontent.com/0honus0/Subconverter_Rule/master/rulesets.toml"
+import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/rulesets.toml"
 
 [template]
 template_path = ""
