@@ -3,16 +3,14 @@
 mixed-port: {{ default(global.clash.mixed-port, "7890") }}
 tproxy-port: {{ default(global.clash.tproxy-port, "7893" )}}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
-ipv6: {{ default(global.clash.ipv6, "false") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090
 {% if default(request.clash.dns, "") == "1" or default(global.clash.dns, "") == "1" %}
 dns:
   enable: true
-  listen: ::1053
-  ipv6: false
-  enhanced-mode: redir-host
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
   nameserver:
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
