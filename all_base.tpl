@@ -10,7 +10,7 @@ external-controller: :9090
 dns:
   enable: true
   listen: 0.0.0.0:53
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   nameserver:
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
