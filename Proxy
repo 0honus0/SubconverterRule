@@ -6,3 +6,10 @@ DOMAIN-SUFFIX,epicgames.com
 
 DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,v2ex.com
+
+#
+DOMAIN-SUFFIX,edgexfoundry.org
+DOMAIN-SUFFIX,edgexfoundry.org
+DOMAIN-SUFFIX,home-assistant.io
+DOMAIN-SUFFIX,onvif.org
+DOMAIN-SUFFIX,espressif.com
