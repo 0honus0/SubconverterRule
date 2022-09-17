@@ -110,7 +110,7 @@ import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/emoj
 import = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/groups.toml"
 
 [ruleset]
-enabled = false
+enabled = true
 overwrite_original_rules = false
 update_ruleset_on_request = false
 
