@@ -36,6 +36,10 @@ group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
 
 [[rulesets]]
+group = "🛑 全球拦截"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Reject"
+
+[[rulesets]]
 group = "🌍 国外媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
 
