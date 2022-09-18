@@ -190,7 +190,6 @@ ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 geoip, cn, direct
-final, 漏网之鱼
 
 [rewrite_local]
 
