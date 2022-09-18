@@ -112,16 +112,38 @@ STATE,AUTO
 {% if request.target == "quanx" %}
 
 [general]
-excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
-network_check_url=http://www.baidu.com/
-server_check_url=http://www.gstatic.com/generate_204
+excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
+network_check_url=http://cp.cloudflare.com/generate_204
+server_check_url=http://cp.cloudflare.com/generate_204
+resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+profile_img_url=https://yattazen.com/favicon.ico
+dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf, *.icbc.com.cn
+geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_ip_addr? , https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_bili_cn.js
 
 [dns]
+no-ipv6
 server=119.29.29.29
 server=223.5.5.5
-server=1.0.0.1
-server=8.8.8.8
+server=1.2.4.8
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.alicdn.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.28.28.28
+server=/*.weixin.com/119.28.28.28
+server=/*.bilibili.com/119.29.29.29
+server=/hdslb.com/119.29.29.29
+server=/*.163.com/119.29.29.29
+server=/*.126.com/119.29.29.29
+server=/*.126.net/119.29.29.29
+server=/*.127.net/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/*.mi.com/119.29.29.29
+server=/*.xiaomi.com/119.29.29.29
+address=/mtalk.google.com/108.177.125.188
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
@@ -140,10 +162,35 @@ static=🐟 漏网之鱼, direct, img-url=https://raw.githubusercontent.com/Kool
 [filter_remote]
 
 [rewrite_remote]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=blackmatrix7去广告规则, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/yawenchim/QuantumultX-mix/master/unlock/TikTok_JP.sgmodule, tag=解锁Tiktok(地址中JP可替换成TW,US,UK,KR), update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/AdBlock/StartUp.conf, tag=去广告规则, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/AdBlock/Weibo.conf, tag=微博去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/Function/BetterWeb.conf, tag=网页端优化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/Function/EndlessGoogle.conf, tag=无限翻页, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
 [filter_local]
+HOST-SUFFIX,95599.cn,direct
+HOST-SUFFIX,abchina.com,direct
+HOST-SUFFIX,bscabank.com,direct
+HOST-SUFFIX,openaboc.cn,direct
+HOST-SUFFIX,openaboc.com,direct
+HOST-SUFFIX,openaboc.com.cn,direct
+host-suffix, local, direct
+host-keyword, yattazen, proxy
+host, jdsharedresourcescdn.azureedge.net, proxy
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 17.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+geoip, cn, direct
+final, 漏网之鱼
 
 [rewrite_local]
 
