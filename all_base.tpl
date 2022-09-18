@@ -170,7 +170,7 @@ https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/Function/
 https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/Function/EndlessGoogle.conf, tag=无限翻页, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
-
+https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
 [server_local]
 
 [filter_local]
