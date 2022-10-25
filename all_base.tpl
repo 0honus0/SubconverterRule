@@ -193,7 +193,6 @@ ip-cidr, 192.168.0.0/16, direct
 [rewrite_local]
 
 [task_local]
-0 0 23 1 * https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_config.js, tag=微博配置, img-url=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/imgs/icon/weibo.png, enabled=false
 
 [mitm]
 {% if request.key == "honus" %}
