@@ -122,30 +122,12 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 
 [dns]
 no-ipv6
-server=119.29.29.29
-server=223.5.5.5
-server=1.2.4.8
-server=/*qq.com/119.29.29.29
-server=/*.weixin.com/119.29.29.29
-server=/*.tencent.com/119.29.29.29
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.alicdn.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.28.28.28
-server=/*.qq.com/119.28.28.28
-server=/*.bilibili.com/119.29.29.29
-server=/hdslb.com/119.29.29.29
-server=/*.163.com/119.29.29.29
-server=/*.126.com/119.29.29.29
-server=/*.126.net/119.29.29.29
-server=/*.127.net/119.29.29.29
-server=/*.netease.com/119.29.29.29
-server=/*.mi.com/119.29.29.29
-server=/*.xiaomi.com/119.29.29.29
-address=/mtalk.google.com/108.177.125.188
-doh-server=https://dns.alidns.com/dns-query
+server = 119.29.29.29
+server = 182.254.116.116
+server = 223.5.5.5
+server = 223.6.6.6
+server = 119.28.28.28
+doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query, https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
