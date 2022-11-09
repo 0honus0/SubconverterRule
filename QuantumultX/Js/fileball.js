@@ -12,6 +12,44 @@ hostname = api.revenuecat.com, app-measurement.com
 
 var objc = JSON.parse($response.body);
 
-    objc = {"request_date_ms":1666618170880,"request_date":"2022-10-24T13:29:30Z","subscriber":{"non_subscriptions":{},"first_seen":"2022-10-24T13:29:30Z","original_application_version":null,"entitlement":{},"other_purchases":{},"management_url":null,"subscriptions":{"com.chxm1023.premium.yearly":{"warning":"仅供学习，禁止转载或售卖","wechat":"chxm1023","purchase_date":"2022-02-02T09:09:09Z","original_purchase_date":"2022-02-02T09:09:09Z","feedback":"chxm1023","expires_date":"2099-10-23T09:09:09Z"}},"entitlements":{"filebox_pro":{"wechat":"chxm1023","product_identifier":"com.chxm1023.premium.yearly","feedback":"chxm1023","expires_date":"2099-10-23T09:09:09Z","warning":"仅供学习，禁止转载或售卖","original_purchase_date":"2022-02-02T09:09:09Z","purchase_date":"2022-02-02T09:09:09Z"}},"original_purchase_date":null,"original_app_user_id":"$RCAnonymousID:547f01bad4e540678069f8a8ee71f826","last_seen":"2022-10-24T13:29:30Z"}}
-
+    objc = 
+{
+    "request_date_ms" : 416505600000,
+    "request_date" : "1983-03-15T00:00:00Z",
+    "subscriber" : {
+        "non_subscriptions" : {
+        "filebox_pro" : [
+            {
+            "id" : "yingzi",
+            "is_sandbox" : false,
+            "purchase_date" : "1983-03-15T00:00:00Z",
+            "original_purchase_date" : "1983-03-15T00:00:00Z",
+            "store" : "app_store"
+            }
+        ]
+        },
+        "first_seen" : "1983-03-15T00:00:00Z",
+        "original_application_version" : "170",
+        "other_purchases" : {
+        "filebox_pro" : {
+            "purchase_date" : "1983-03-15T00:00:00Z"
+        }
+        },
+        "management_url" : null,
+        "subscriptions" : {
+    
+        },
+        "entitlements" : {
+        "filebox_pro" : {
+            "grace_period_expires_date" : null,
+            "purchase_date" : "1983-03-15T00:00:00Z",
+            "product_identifier" : "filebox_pro",
+            "expires_date" : null
+        }
+        },
+        "original_purchase_date" : "1983-03-15T00:00:00Z",
+        "original_app_user_id" : "$RCAnonymousID%3A8e5a11e56b4246f2ab2b17058c01db1e",
+        "last_seen" : "1983-03-15T00:00:00Z"
+    }
+}
 $done({body : JSON.stringify(objc)});
