@@ -25,6 +25,10 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaC
 
 [[rulesets]]
 group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
