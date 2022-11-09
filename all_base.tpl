@@ -112,9 +112,9 @@ STATE,AUTO
 {% if request.target == "quanx" %}
 
 [general]
-excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
-network_check_url=http://cp.cloudflare.com/generate_204
-server_check_url=http://cp.cloudflare.com/generate_204
+excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, 239.255.255.250/32
+network_check_url=http://www.bing.com
+server_check_url=http://www.gstatic.com/generate_204
 resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
 profile_img_url=https://yattazen.com/favicon.ico
 dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf, *.icbc.com.cn
@@ -125,6 +125,9 @@ no-ipv6
 server=119.29.29.29
 server=223.5.5.5
 server=1.2.4.8
+server=/*qq.com/119.29.29.29
+server=/*.weixin.com/119.29.29.29
+server=/*.tencent.com/119.29.29.29
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
 server=/*.alipay.com/223.5.5.5
@@ -132,8 +135,6 @@ server=/*.alicdn.com/223.5.5.5
 server=/*.aliyun.com/223.5.5.5
 server=/*.jd.com/119.28.28.28
 server=/*.qq.com/119.28.28.28
-server=/*.tencent.com/119.28.28.28
-server=/*.weixin.com/119.28.28.28
 server=/*.bilibili.com/119.29.29.29
 server=/hdslb.com/119.29.29.29
 server=/*.163.com/119.29.29.29
@@ -144,6 +145,7 @@ server=/*.netease.com/119.29.29.29
 server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
 address=/mtalk.google.com/108.177.125.188
+doh-server=https://dns.alidns.com/dns-query
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
@@ -189,6 +191,7 @@ ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
+ip-asn, 132203, direct
 
 [rewrite_local]
 
