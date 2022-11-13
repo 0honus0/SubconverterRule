@@ -148,7 +148,7 @@ static=🐟 漏网之鱼, direct, img-url=https://raw.githubusercontent.com/Kool
 [rewrite_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=blackmatrix7去广告规则, update-interval=86400, opt-parser=false, enabled=true
 https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/AdBlock/StartUp.conf, tag=去广告规则, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo.conf, tag=微博去广告, update-interval=86400, opt-parser=false, enabled=true
+https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/AdBlock/WeiboLite.conf, tag=微博去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
 https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/UnlockVip/ParseVideo.conf, tag=解析VIP视频, update-interval=86400, opt-parser=false, enabled=true
