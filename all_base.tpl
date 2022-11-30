@@ -151,7 +151,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Qu
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=去广告规则, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/WeiboLite.conf, tag=微博去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/StartAD.conf, tag=去开屏广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/Function/History_price.conf, tag=历史价格, update-interval=86400, opt-parser=false, enabled=true
