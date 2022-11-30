@@ -115,6 +115,7 @@ STATE,AUTO
 excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, 239.255.255.250/32
 network_check_url=http://www.bing.com
 server_check_url=http://www.gstatic.com/generate_204
+server_check_timeout = 2000
 resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
 profile_img_url=https://yattazen.com/favicon.ico
 dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf, *.icbc.com.cn
@@ -153,6 +154,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhi
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/StartAD.conf, tag=去开屏广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
+
 
 [server_local]
 
