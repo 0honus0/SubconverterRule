@@ -123,12 +123,12 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 
 [dns]
 no-ipv6
-server = 119.29.29.29
-server = 182.254.116.116
+server = 114.114.114.114
 server = 223.5.5.5
-server = 223.6.6.6
-server = 119.28.28.28
-doh-server=https://dns.alidns.com/dns-query, https://doh.pub/dns-query, https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
+server = 119.29.29.29
+server = 180.76.76.76
+server = 8.8.8.8
+server = 1.1.1.1
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
