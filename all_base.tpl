@@ -123,12 +123,16 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 
 [dns]
 no-ipv6
-server = 114.114.114.114
+no-system
 server = 223.5.5.5
+server = 223.6.6.6
 server = 119.29.29.29
-server = 180.76.76.76
-server = 8.8.8.8
-server = 1.1.1.1
+server = /*itunes.apple.com/system
+server = /*testflight.apple.com/8.8.4.4
+server = /*icloud.com/119.29.29.29
+server = /*icloud.com.cn/119.29.29.29
+server = /*.tencent.com/119.29.29.29
+server = /*.weixin.com/119.29.29.29
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
