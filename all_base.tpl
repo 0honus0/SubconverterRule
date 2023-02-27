@@ -13,8 +13,11 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   nameserver:
-      - 114.114.114.114
-      - 8.8.8.8
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+      - https://rubyfish.cn/dns-query
+      - https://doh.opendns.com/dns-query
+      - https://dns64.cloudflare-dns.com/dns-query
       - 223.5.5.5
       - 223.6.6.6
 {% endif %}
