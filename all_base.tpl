@@ -13,10 +13,10 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   nameserver:
-      - 114.114.114.114
-      - 8.8.8.8
-      - 223.5.5.5
-      - 223.6.6.6
+    - 114.114.114.114
+    - 8.8.8.8
+    - 223.5.5.5
+    - 223.6.6.6
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
