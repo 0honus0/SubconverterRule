@@ -13,10 +13,11 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   nameserver:
+      - https://223.5.5.5/dns-query
       - 114.114.114.114
-      - 8.8.8.8
-      - 223.5.5.5
-      - 223.6.6.6
+      - https://doh.pub/dns-query
+      - 119.29.29.29
+      - https://doh.apad.pro/dns-query
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
@@ -123,8 +124,9 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 [dns]
 no-ipv6
 no-system
-server = 223.5.5.5
-server = 223.6.6.6
+doh-server=https://223.5.5.5/dns-query
+doh-server=https://doh.pub/dns-query
+doh-server=https://doh.apad.pro/dns-query
 server = 119.29.29.29
 server = /*itunes.apple.com/system
 server = /*testflight.apple.com/8.8.4.4
