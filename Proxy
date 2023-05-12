@@ -1,7 +1,5 @@
 #steam
 DOMAIN-SUFFIX,steampowered.com
-DOMAIN-SUFFIX,plex.direct
-DOMAIN-SUFFIX,plex.tv
 
 #epic
 DOMAIN-SUFFIX,epicgames.com
@@ -15,3 +13,5 @@ DOMAIN-SUFFIX,edgexfoundry.org
 DOMAIN-SUFFIX,home-assistant.io
 DOMAIN-SUFFIX,onvif.org
 DOMAIN-SUFFIX,espressif.com
+
+DOMAIN-KEYWORD,plex
