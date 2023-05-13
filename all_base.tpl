@@ -124,9 +124,7 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 [dns]
 no-ipv6
 no-system
-doh-server=https://223.5.5.5/dns-query
-doh-server=https://doh.pub/dns-query
-doh-server=https://doh.apad.pro/dns-query
+doh-server=https://223.5.5.5/dns-query,https://doh.pub/dns-query
 server = 119.29.29.29
 server = /*itunes.apple.com/system
 server = /*testflight.apple.com/8.8.4.4
