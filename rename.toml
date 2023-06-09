@@ -171,6 +171,10 @@
 # match = "土耳其"
 # replace = "土"
 
+# [[rename_node]]
+# match = "阿根廷"
+# replace = "阿"
+
 # times RE
 [[rename_node]]
 match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
