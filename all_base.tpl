@@ -230,6 +230,7 @@ https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/r
 https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.conf, tag=微信解锁被屏蔽的URL@zZPiglet, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本@Orz-3, update-interval=86400, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Modules/main/RevenueCat.Vip.sgmodule, tag=ServerCat, update-interval=86400, opt-parser=true, enabled=true
 
 [server_local]
 
