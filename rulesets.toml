@@ -2,10 +2,6 @@
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Proxy"
 
-[[rulesets]]
-group = "🔰 节点选择"
-ruleset = "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list"
-
 # 电报信息
 [[rulesets]]
 group = "🔰 节点选择"
