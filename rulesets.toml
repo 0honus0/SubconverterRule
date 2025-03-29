@@ -7,6 +7,11 @@ ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Pro
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
 
+# 国外
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Direct"
