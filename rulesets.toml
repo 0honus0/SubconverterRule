@@ -10,7 +10,7 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegr
 # 国外
 [[rulesets]]
 group = "🔰 节点选择"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+ruleset = "https://rules.xkww3n.cyou/clash-compatible/proxy.txt"
 
 [[rulesets]]
 group = "🎯 全球直连"
