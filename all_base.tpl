@@ -231,7 +231,7 @@ https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js, tag=酷�
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pixivAds.js, tag=Pixiv去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js, tag=12306去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/EndlessGoogle.conf, tag=Google无尽滚动, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price2.sgmodule, tag=12306去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, tag=京东比价, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Snippet/GoogleCAPTCHA.snippet, tag=GoogleCAPTCHA, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Modules/main/123pan.webEnhance.sgmodule, tag=123pan网盘增强, update-interval=86400, opt-parser=true, enabled=true
 # https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
