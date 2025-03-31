@@ -49,9 +49,9 @@ http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.gi
 [General]
 # IPV6 启动与否
 ipv6 = false
-# udp 类的 dns 服务器，用,隔开多个服务器，system 表示系统 dns
+# udp 类的 dns 服务器,用,隔开多个服务器,system 表示系统 dns
 dns-server = 119.29.29.29, 223.5.5.5
-# DNS over HTTPS服务器，用,隔开多个服务器
+# DNS over HTTPS服务器,用,隔开多个服务器
 doh-server = https://223.5.5.5/resolve, https://sm2.doh.pub/dns-query
 # 是否开启局域网代理访问
 allow-wifi-access = false
@@ -59,28 +59,28 @@ allow-wifi-access = false
 wifi-access-http-port = 7222
 # 开启局域网访问后的 socks5 代理端口
 wifi-access-socks5-port = 7221
-# 测速所用的测试链接，如果策略组没有自定义测试链接就会使用这里配置的
+# 测速所用的测试链接,如果策略组没有自定义测试链接就会使用这里配置的
 proxy-test-url = http://connectivitycheck.gstatic.com
 # 节点测速时的超时秒数
 test-timeout = 2
 # 指定流量使用哪个网络接口进行转发
 interface-mode = auto
 sni-sniffing = true
-# 禁用 stun 是否禁用 stun 协议的 udp 数据，禁用后可以有效解决 webrtc 的 ip 泄露
+# 禁用 stun 是否禁用 stun 协议的 udp 数据,禁用后可以有效解决 webrtc 的 ip 泄露
 disable-stun = true
 # 策略改变时候打断连接
 disconnect-on-policy-change = true
-# 一个节点连接失败几次后会进行节点切换，默认 3 次
+# 一个节点连接失败几次后会进行节点切换,默认 3 次
 switch-node-after-failure-times = 3
 # 订阅资源解析器链接
 resource-parser = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Sub-Store/sub-store-parser_for_loon.js
 # 自定义 geoip 数据库的 url
 geoip-url = https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
-# 配置了该参数，那么所配置的这些IP段、域名将不会转发到Loon，而是由系统处理
+# 配置了该参数,那么所配置的这些IP段、域名将不会转发到Loon,而是由系统处理
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com, e.crashlynatics.com
-# 配置了该参数，那么所配置的这些IP段、域名就会不交给Loon来处理，系统直接处理
+# 配置了该参数,那么所配置的这些IP段、域名就会不交给Loon来处理,系统直接处理
 bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 239.255.255.250/32, 255.255.255.255/32
-# 当切换到某一特定的WiFi下时改变Loon的流量模式，如"loon-wifi5g":DIRECT，表示在loon-wifi5g这个wifi网络下使用直连模式，"cellular":PROXY，表示在蜂窝网络下使用代理模式，"default":RULE，默认使用分流模式
+# 当切换到某一特定的WiFi下时改变Loon的流量模式,如"loon-wifi5g":DIRECT,表示在loon-wifi5g这个wifi网络下使用直连模式,"cellular":PROXY,表示在蜂窝网络下使用代理模式,"default":RULE,默认使用分流模式
 ssid-trigger = "Ccccccc":DIRECT,"cellular":RULE,"default":RULE
 
 [Proxy]
@@ -130,7 +130,7 @@ http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/user
 cron "18 9 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js, tag=中国联通
 
 # 万达电影  (By @chavyleung)
-# 进入签到页面获取，网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
+# 进入签到页面获取,网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
 http-request ^https:\/\/user-api-prd-mx\.wandafilm\.com script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js, tag=万达电影_cookie
 cron "19 9 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, tag=万达电影
 
@@ -187,7 +187,7 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 [dns]
 ;prefer-doh3
 ;doh-server = https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
-# > QuantumultX开启IPV6方法，删去下面的「no-ipv6」，在「VPN」栏中，开启「兼容性增强」
+# > QuantumultX开启IPV6方法,删去下面的「no-ipv6」,在「VPN」栏中,开启「兼容性增强」
 no-ipv6
 no-system
 server=223.5.5.5
@@ -215,24 +215,29 @@ static=🐟 漏网之鱼, direct, img-url=https://raw.githubusercontent.com/Kool
 [filter_remote]
 
 [rewrite_remote]
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去开屏2.0@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet, tag=知乎去广告及体验增强@blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧去广告@app2smile, update-interval=86400, opt-parser=false, enabled=false
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf, tag=微信小程序去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf, tag=微博去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Modules/main/RevenueCat.Vip.sgmodule, tag=ServerCat, update-interval=86400, opt-parser=true, enabled=true
-https://github.com/ddgksf2013/dev/raw/master/ForOwnUse.conf, tag=墨鱼专属VIP@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-# ======= 网页优化 ======= #
-https://github.com/ddgksf2013/Rewrite/raw/master/Html/Q-Search.conf, tag=Safari超级搜索@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/ddgksf2013/Rewrite/raw/master/Html/Douban.conf, tag=豆瓣网页观影快捷跳转@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/General.conf, tag=神机重定向@DivineEngine, update-interval=86400, opt-parser=false, enabled=true
-# ======= 功能增强 ======= #
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/XiaoHongShu.conf, tag=小红书净化+去水印@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, tag=百度网盘净化@ddgksf2013, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/StartUp.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/BilibiliAds.conf, tag=哔哩哔哩广告净化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/MoYu/master/NicegramProCrack.js, tag=Nicegram☆解锁会员权限, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf, tag=Youtube去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/XiaoHongShuAds.conf, tag=小红书净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf, tag=微信解锁被屏蔽的URL@zZPiglet, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/General.conf, tag=神机重定向, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/SmzdmAds.conf, tag=什么值得买净化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Amap.conf, tag=高德地图净化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/dev/master/ForOwnUse.conf, tag=墨鱼专属VIP@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, tag=𝐑𝐞𝐯𝐞𝐧𝐮𝐞𝐂𝐚𝐭多合一脚本, update-interval=86400, opt-parser=true, enabled=true
+https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, tag=百度网盘净化@ddgksf2013, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js, tag=酷安净化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pixivAds.js, tag=Pixiv去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js, tag=12306去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/EndlessGoogle.conf, tag=Google无尽滚动, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price2.sgmodule, tag=12306去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Snippet/GoogleCAPTCHA.snippet, tag=GoogleCAPTCHA, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Modules/main/123pan.webEnhance.sgmodule, tag=123pan网盘增强, update-interval=86400, opt-parser=true, enabled=true
+# https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJS商店版@chavyleung, update-interval=86400, opt-parser=false, enabled=false
+
 
 [server_local]
 
