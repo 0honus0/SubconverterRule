@@ -2,10 +2,17 @@
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Proxy"
 
+# Telegram
 [[rulesets]]
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
 
+# Github
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list"
+
+# Media
 [[rulesets]]
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list"
