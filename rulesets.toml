@@ -7,11 +7,6 @@ ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Pro
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
 
-# 国外
-[[rulesets]]
-group = "🔰 节点选择"
-ruleset = "https://rules.xkww3n.cyou/clash-compatible/proxy.txt"
-
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Direct"
@@ -71,23 +66,3 @@ ruleset = "[]FINAL"
 # [[rulesets]]
 # group = "🌏 国内媒体"
 # ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
-
-# [[rulesets]]
-# group = "🌏 国内媒体"
-# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/iQiyi.list"
-
-# [[rulesets]]
-# group = "🌏 国内媒体"
-# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Letv.list"
-
-# [[rulesets]]
-# group = "🌏 国内媒体"
-# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/MOO.list"
-
-# [[rulesets]]
-# group = "🌏 国内媒体"
-# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Tencent Video.list"
-
-# [[rulesets]]
-# group = "🌏 国内媒体"
-# ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Youku.list"
