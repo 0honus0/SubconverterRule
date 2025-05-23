@@ -13,11 +13,11 @@ ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Dir
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://rules.xkww3n.cyou/clash-compatible/domestic.txt"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://rules.xkww3n.cyou/clash-compatible/bilibili.txt"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaMedia.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -46,10 +46,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 [[rulesets]]
 group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Reject"
-
-[[rulesets]]
-group = "🌍 国外媒体"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
 
 [[rulesets]]
 group = "🍎 苹果服务"
