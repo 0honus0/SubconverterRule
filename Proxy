@@ -8,7 +8,6 @@ DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,v2ex.com
 
 # Self
-DOMAIN-KEYWORD,ok
 DOMAIN-SUFFIX,edgexfoundry.org
 DOMAIN-SUFFIX,edgexfoundry.org
 DOMAIN-SUFFIX,home-assistant.io
@@ -18,3 +17,4 @@ DOMAIN-SUFFIX,t66y.com
 DOMAIN-SUFFIX,sehuatang.net
 DOMAIN-SUFFIX,south-plus.net
 DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,ok
