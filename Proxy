@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,v2ex.com
 
 # Self
+DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,lowendtalk.com
 DOMAIN-SUFFIX,imetyou.top
 DOMAIN-SUFFIX,edgexfoundry.org
