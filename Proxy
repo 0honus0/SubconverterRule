@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,v2ex.com
 
 # Self
 DOMAIN-SUFFIX,gravatar.com
+DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,lowendtalk.com
 DOMAIN-SUFFIX,imetyou.top
 DOMAIN-SUFFIX,edgexfoundry.org
