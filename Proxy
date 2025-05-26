@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,v2ex.com
 
 # Self
+DOMAIN-SUFFIX,sourceforge.net
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,buysellads.com
 DOMAIN-SUFFIX,jsdelivr.net
