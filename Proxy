@@ -1,20 +1,29 @@
-DOMAIN-SUFFIX,epicgames.com
+# 论坛
+DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,sourceforge.net
-DOMAIN-SUFFIX,gravatar.com
-DOMAIN-SUFFIX,buysellads.com
-DOMAIN-SUFFIX,jsdelivr.net
-DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,lowendtalk.com
+DOMAIN-SUFFIX,t66y.com
+DOMAIN-SUFFIX,sehuatang.net
+DOMAIN-SUFFIX,south-plus.net
+
+# 资源下载
+DOMAIN-SUFFIX,sourceforge.net
+
+# 镜像源
+DOMAIN-SUFFIX,gravatar.com
+DOMAIN-SUFFIX,jsdelivr.net
+
+DOMAIN-SUFFIX,epicgames.com
+DOMAIN-SUFFIX,buysellads.com
+DOMAIN-SUFFIX,twitter.com
+
 DOMAIN-SUFFIX,imetyou.top
 DOMAIN-SUFFIX,edgexfoundry.org
 DOMAIN-SUFFIX,home-assistant.io
 DOMAIN-SUFFIX,onvif.org
 DOMAIN-SUFFIX,espressif.com
-DOMAIN-SUFFIX,t66y.com
-DOMAIN-SUFFIX,sehuatang.net
-DOMAIN-SUFFIX,south-plus.net
+
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,ok
 DOMAIN-KEYWORD,golang
