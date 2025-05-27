@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,hhanclub.top
 # 资源下载
 DOMAIN-SUFFIX,sourceforge.net
 DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,docker.com
 
 # 镜像源
 DOMAIN-SUFFIX,gravatar.com
