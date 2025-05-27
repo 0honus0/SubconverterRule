@@ -8,8 +8,10 @@ DOMAIN-SUFFIX,sehuatang.net
 DOMAIN-SUFFIX,south-plus.net
 DOMAIN-SUFFIX,hdsky.me
 
+
 # 资源下载
 DOMAIN-SUFFIX,sourceforge.net
+DOMAIN-SUFFIX,greasyfork.org
 
 # 镜像源
 DOMAIN-SUFFIX,gravatar.com
