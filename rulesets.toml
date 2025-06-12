@@ -51,8 +51,16 @@ group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
+group = "AI"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Ai"
+
+[[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+
+[[rulesets]]
+group = "🍎 苹果服务"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
 
 [[rulesets]]
 group = "🛑 全球拦截"
@@ -62,9 +70,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Reject"
 
-[[rulesets]]
-group = "🍎 苹果服务"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
