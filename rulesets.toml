@@ -65,6 +65,10 @@ group = "AI"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Ai"
 
 [[rulesets]]
+group = "OWN"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Own"
+
+[[rulesets]]
 group = "Ⓜ️ 微软服务"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
 
