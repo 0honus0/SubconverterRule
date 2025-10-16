@@ -1,17 +1,15 @@
 {% if request.target == "clash" or request.target == "clashr" %}
 
-mixed-port: {{ default(global.clash.mixed-port, "7890") }}
-tproxy-port: {{ default(global.clash.tproxy-port, "7893" )}}
+port: {{ default(global.clash.http_port, "7890") }}
+socks-port: {{ default(global.clash.socks_port, "7891") }}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
-ipv6: true
 log-level: {{ default(global.clash.log_level, "info") }}
-external-controller: :9090
-{% if default(request.clash.dns, "") == "1" or default(global.clash.dns, "") == "1" %}
+external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
+{% if default(request.clash.dns, "") == "1" %}
 dns:
   enable: true
-  listen: 0.0.0.0:53
-  enhanced-mode: fake-ip
+  listen: :1053
   nameserver:
       - https://223.5.5.5/dns-query
       - 114.114.114.114
@@ -49,9 +47,9 @@ http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.gi
 [General]
 # IPV6 启动与否
 ipv6 = false
-# udp 类的 dns 服务器,用,隔开多个服务器,system 表示系统 dns
+# udp 类的 dns 服务器，用,隔开多个服务器，system 表示系统 dns
 dns-server = 119.29.29.29, 223.5.5.5
-# DNS over HTTPS服务器,用,隔开多个服务器
+# DNS over HTTPS服务器，用,隔开多个服务器
 doh-server = https://223.5.5.5/resolve, https://sm2.doh.pub/dns-query
 # 是否开启局域网代理访问
 allow-wifi-access = false
@@ -59,28 +57,28 @@ allow-wifi-access = false
 wifi-access-http-port = 7222
 # 开启局域网访问后的 socks5 代理端口
 wifi-access-socks5-port = 7221
-# 测速所用的测试链接,如果策略组没有自定义测试链接就会使用这里配置的
+# 测速所用的测试链接，如果策略组没有自定义测试链接就会使用这里配置的
 proxy-test-url = http://connectivitycheck.gstatic.com
 # 节点测速时的超时秒数
 test-timeout = 2
 # 指定流量使用哪个网络接口进行转发
 interface-mode = auto
 sni-sniffing = true
-# 禁用 stun 是否禁用 stun 协议的 udp 数据,禁用后可以有效解决 webrtc 的 ip 泄露
+# 禁用 stun 是否禁用 stun 协议的 udp 数据，禁用后可以有效解决 webrtc 的 ip 泄露
 disable-stun = true
 # 策略改变时候打断连接
 disconnect-on-policy-change = true
-# 一个节点连接失败几次后会进行节点切换,默认 3 次
+# 一个节点连接失败几次后会进行节点切换，默认 3 次
 switch-node-after-failure-times = 3
 # 订阅资源解析器链接
 resource-parser = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Sub-Store/sub-store-parser_for_loon.js
 # 自定义 geoip 数据库的 url
 geoip-url = https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb
-# 配置了该参数,那么所配置的这些IP段、域名将不会转发到Loon,而是由系统处理
+# 配置了该参数，那么所配置的这些IP段、域名将不会转发到Loon，而是由系统处理
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com, e.crashlynatics.com
-# 配置了该参数,那么所配置的这些IP段、域名就会不交给Loon来处理,系统直接处理
+# 配置了该参数，那么所配置的这些IP段、域名就会不交给Loon来处理，系统直接处理
 bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 239.255.255.250/32, 255.255.255.255/32
-# 当切换到某一特定的WiFi下时改变Loon的流量模式,如"loon-wifi5g":DIRECT,表示在loon-wifi5g这个wifi网络下使用直连模式,"cellular":PROXY,表示在蜂窝网络下使用代理模式,"default":RULE,默认使用分流模式
+# 当切换到某一特定的WiFi下时改变Loon的流量模式，如"loon-wifi5g":DIRECT，表示在loon-wifi5g这个wifi网络下使用直连模式，"cellular":PROXY，表示在蜂窝网络下使用代理模式，"default":RULE，默认使用分流模式
 ssid-trigger = "Ccccccc":DIRECT,"cellular":RULE,"default":RULE
 
 [Proxy]
@@ -130,7 +128,7 @@ http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/user
 cron "18 9 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js, tag=中国联通
 
 # 万达电影  (By @chavyleung)
-# 进入签到页面获取,网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
+# 进入签到页面获取，网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
 http-request ^https:\/\/user-api-prd-mx\.wandafilm\.com script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js, tag=万达电影_cookie
 cron "19 9 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, tag=万达电影
 
@@ -175,8 +173,9 @@ STATE,AUTO
 {% if request.target == "quanx" %}
 
 [general]
-excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, 239.255.255.250/32
-network_check_url=http://www.bing.com
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
 server_check_url=http://www.gstatic.com/generate_204
 server_check_timeout = 2000
 resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
@@ -440,7 +439,16 @@ enhanced-mode-by-rule = true
         "rules": [],
         "auto_detect_interface": true
     },
-    "experimental": {}
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "external_controller": "{{ default(global.clash.external_controller, "127.0.0.1:9090") }}",
+            "external_ui": "dashboard"
+        }
+    }
 }
 
 {% endif %}
