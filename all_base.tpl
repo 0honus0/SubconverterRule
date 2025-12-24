@@ -214,28 +214,25 @@ static=🐟 漏网之鱼, direct, img-url=https://raw.githubusercontent.com/Kool
 [filter_remote]
 
 [rewrite_remote]
-https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule, tag=墨鱼去开屏, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/BilibiliAds.conf, tag=哔哩哔哩广告净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf, tag=Youtube去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/XiaoHongShuAds.conf, tag=小红书净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf, tag=微信解锁被屏蔽的URL@zZPiglet, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/General.conf, tag=神机重定向, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/SmzdmAds.conf, tag=什么值得买净化, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Amap.conf, tag=高德地图净化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/AmapAds.conf, tag=高德地图净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/dev/master/ForOwnUse.conf, tag=墨鱼专属VIP@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, tag=𝐑𝐞𝐯𝐞𝐧𝐮𝐞𝐂𝐚𝐭多合一脚本, update-interval=86400, opt-parser=true, enabled=true
 https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, tag=百度网盘净化@ddgksf2013, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js, tag=酷安净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pixivAds.js, tag=Pixiv去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js, tag=12306去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/EndlessGoogle.conf, tag=Google无尽滚动, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, tag=京东比价, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, tag=京东比价, update-interval=86400, opt-parser=true, enabled=false
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Snippet/GoogleCAPTCHA.snippet, tag=GoogleCAPTCHA, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Modules/main/123pan.webEnhance.sgmodule, tag=123pan网盘增强, update-interval=86400, opt-parser=true, enabled=true
-# https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJS商店版@chavyleung, update-interval=86400, opt-parser=false, enabled=false
-
 
 [server_local]
 
