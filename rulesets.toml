@@ -16,6 +16,11 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegr
 group = "🔰 节点选择"
 ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list"
 
+# Google
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
+
 # Steam
 [[rulesets]]
 group = "🔰 节点选择"
