@@ -213,7 +213,8 @@ static=🐟 漏网之鱼, direct, img-url=https://raw.githubusercontent.com/Kool
 [filter_remote]
 
 [rewrite_remote]
-https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule, tag=墨鱼去开屏, update-interval=86400, opt-parser=true, enabled=true
+https://ddgksf2013.top/rewrite/StartUpAds.conf, tag=墨鱼去开屏2.0去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://ddgksf2013.top/scripts/bdpan.ads.js, tag=百度网盘去广告@ddgksf2013, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/BilibiliAds.conf, tag=哔哩哔哩广告净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf, tag=Youtube去广告, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/XiaoHongShuAds.conf, tag=小红书净化, update-interval=86400, opt-parser=false, enabled=true
@@ -222,13 +223,10 @@ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/General.conf, t
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/SmzdmAds.conf, tag=什么值得买净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/AmapAds.conf, tag=高德地图净化, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/dev/master/ForOwnUse.conf, tag=墨鱼专属VIP@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
-https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, tag=百度网盘净化@ddgksf2013, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js, tag=酷安净化, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pixivAds.js, tag=Pixiv去广告, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js, tag=12306去广告, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, tag=京东比价, update-interval=86400, opt-parser=true, enabled=false
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Snippet/GoogleCAPTCHA.snippet, tag=GoogleCAPTCHA, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Modules/main/123pan.webEnhance.sgmodule, tag=123pan网盘增强, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/0honus0/SubconverterRule/master/QuantumultX/Conf/own.conf, tag=自定义规则, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qiangxinglin/Emby/main/QuantumultX/emby.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJS商店版@chavyleung, update-interval=86400, opt-parser=false, enabled=false
