@@ -1,19 +1,5 @@
 # Rule count: 151
 # Last updated: 2025-05-29T03:44:19.294164
-DOMAIN-KEYWORD,aistudio
-DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,cohere
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,copilot
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,groq
-DOMAIN-KEYWORD,hcompany
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,openaicom-api
 DOMAIN-SUFFIX,AI.com
 DOMAIN-SUFFIX,Anthropic.com
 DOMAIN-SUFFIX,ai.com
