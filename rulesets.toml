@@ -1,5 +1,5 @@
 [[rulesets]]
-group = "AI"
+group = "🤖 AI"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Ai"
 
 [[rulesets]]
@@ -70,8 +70,12 @@ group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
-group = "OWN"
+group = "👤 OWN"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Own"
+
+[[rulesets]]
+group = "🌍 国外媒体"
+ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTubeMusic/YouTubeMusic.list"
 
 [[rulesets]]
 group = "Ⓜ️ 微软服务"
@@ -88,7 +92,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 [[rulesets]]
 group = "🛑 全球拦截"
 ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Reject"
-
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
