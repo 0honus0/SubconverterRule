@@ -197,6 +197,8 @@ server=/*.tencent.com/119.29.29.29
 server=/*.weixin.com/119.29.29.29
 
 [policy]
+static=🤖 AI, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
+static=👤 OWN, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Heart.png
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 static=🔰 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 static=🌍 国外媒体, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png

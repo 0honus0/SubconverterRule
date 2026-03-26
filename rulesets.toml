@@ -1,10 +1,10 @@
 [[rulesets]]
 group = "🤖 AI"
-ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Ai"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Ai.list"
 
 [[rulesets]]
 group = "🔰 节点选择"
-ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Proxy"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Proxy.list"
 
 # Telegram
 [[rulesets]]
@@ -33,7 +33,7 @@ ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/h
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Direct"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Direct.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -61,7 +61,7 @@ ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
 group = "👤 OWN"
-ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Own"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Own.list"
 
 [[rulesets]]
 group = "🌍 国外媒体"
