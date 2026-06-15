@@ -88,7 +88,7 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 
 [[rulesets]]
 group = "🛑 全球拦截"
-ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/master/Reject"
+ruleset = "https://raw.githubusercontent.com/0honus0/SubconverterRule/refs/heads/master/Reject.list"
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
