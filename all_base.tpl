@@ -6,16 +6,24 @@ allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
-{% if default(request.clash.dns, "") == "1" %}
+{% if default(request.clash.ytoo_dns, "") == "1" %}
+ipv6: false
 dns:
   enable: true
-  listen: :1053
-  nameserver:
-      - https://223.5.5.5/dns-query
-      - 114.114.114.114
-      - https://doh.pub/dns-query
-      - 119.29.29.29
-      - https://doh.apad.pro/dns-query
+  ipv6: false
+  listen: 127.0.0.1:1053
+  use-hosts: true
+  fake-ip-filter:
+    - +.114837322.xyz
+    - +.88223163.xyz
+  proxy-server-nameserver:
+    - udp://127.0.0.1:1053
+
+hosts:
+  a1973dd7-a509.114837322.xyz: 28b67842-59fb-11f.88223163.xyz
+  aexbjbgp01.114837322.xyz: dd315eaa-59f5-11f1.88223163.xyz
+  aexgzbgp01.114837322.xyz: dd315eaa-59f5-11f2.88223163.xyz
+  aexshbgp01.114837322.xyz: dd315eaa-59f5-11f3.88223163.xyz
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
