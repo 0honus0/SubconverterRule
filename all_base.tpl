@@ -196,7 +196,8 @@ server=/*.icloud.com.cn/119.29.29.29
 server=/*.tencent.com/119.29.29.29
 server=/*.weixin.com/119.29.29.29
 
-;y-too使用
+;y-too
+# > 机场使用
 alias=/a1973dd7-a509.114837322.xyz/28b67842-59fb-11f.88223163.xyz
 server=/28b67842-59fb-11f.88223163.xyz/system
 alias=/aexbjbgp01.114837322.xyz/dd315eaa-59f5-11f1.88223163.xyz
