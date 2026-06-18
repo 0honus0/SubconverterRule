@@ -7,7 +7,6 @@ mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
 {% if default(request.clash.ytoo_dns, "") == "1" %}
-ipv6: false
 dns:
   enable: true
   ipv6: false
