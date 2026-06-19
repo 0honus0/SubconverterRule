@@ -6,7 +6,7 @@ allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
-{% if default(request.clash.ytoo_dns, "") == "1" %}
+{% if default(request.ytoo_dns, "") == "1" %}
 dns:
   enable: true
   ipv6: false
@@ -203,6 +203,7 @@ server=/*.icloud.com.cn/119.29.29.29
 server=/*.tencent.com/119.29.29.29
 server=/*.weixin.com/119.29.29.29
 
+{% if default(request.ytoo_dns, "") == "1" %}
 ;y-too
 # > 机场使用
 alias=/a1973dd7-a509.114837322.xyz/28b67842-59fb-11f.88223163.xyz
@@ -213,6 +214,7 @@ alias=/aexgzbgp01.114837322.xyz/dd315eaa-59f5-11f2.88223163.xyz
 server=/dd315eaa-59f5-11f2.88223163.xyz/system
 alias=/aexshbgp01.114837322.xyz/dd315eaa-59f5-11f3.88223163.xyz
 server=/dd315eaa-59f5-11f3.88223163.xyz/system
+{% endif %}
 
 [policy]
 static=🤖 AI, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
