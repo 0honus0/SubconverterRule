@@ -53,7 +53,6 @@ rule = ["[]🔰 节点选择",
 name = "🎯 全球直连"
 type = "select"
 rule = ["[]DIRECT", 
-"[]🔰 节点选择",
 ".*"]
 
 [[custom_groups]]
