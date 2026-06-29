@@ -25,7 +25,7 @@ DOMAIN-SUFFIX,edgexfoundry.org
 DOMAIN-SUFFIX,home-assistant.io
 DOMAIN-SUFFIX,onvif.org
 DOMAIN-SUFFIX,espressif.com
-
+DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,sourceforge.net
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,gravatar.com
@@ -40,8 +40,6 @@ DOMAIN-KEYWORD,golang
 
 # Apple 推送
 DOMAIN-SUFFIX,push.apple.com
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-KEYWORD,apple.com.edgekey.net
 
 IP-CIDR,17.249.0.0/16,no-resolve
 IP-CIDR,17.252.0.0/16,no-resolve
