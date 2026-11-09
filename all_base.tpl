@@ -12,17 +12,21 @@ dns:
   ipv6: false
   listen: 127.0.0.1:1053
   use-hosts: true
+  enhanced-mode: fake-ip
   fake-ip-filter:
-    - +.114837322.xyz
-    - +.88223163.xyz
+    - +.163cdn-ai.com
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
   proxy-server-nameserver:
-    - udp://127.0.0.1:1053
+    - 119.29.29.29
+    - 223.5.5.5
 
 hosts:
-  a1973dd7-a509.114837322.xyz: 28b67842-59fb-11f.88223163.xyz
-  aexbjbgp01.114837322.xyz: dd315eaa-59f5-11f1.88223163.xyz
-  aexgzbgp01.114837322.xyz: dd315eaa-59f5-11f2.88223163.xyz
-  aexshbgp01.114837322.xyz: dd315eaa-59f5-11f3.88223163.xyz
+  a1973dd7-a509.163cdn-ai.com: 28b67842-59fb-11f.163cdn-ai.com
+  aexbjbgp01.163cdn-ai.com: dd315eaa-59f5-11f1.163cdn-ai.com
+  aexgzbgp01.163cdn-ai.com: dd315eaa-59f5-11f2.163cdn-ai.com
+  aexshbgp01.163cdn-ai.com: dd315eaa-59f5-11f3.163cdn-ai.com
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
@@ -206,14 +210,14 @@ server=/*.weixin.com/119.29.29.29
 {% if default(request.ytoo_dns, "") == "1" %}
 ;y-too
 # > 机场使用
-alias=/a1973dd7-a509.114837322.xyz/28b67842-59fb-11f.88223163.xyz
-server=/28b67842-59fb-11f.88223163.xyz/system
-alias=/aexbjbgp01.114837322.xyz/dd315eaa-59f5-11f1.88223163.xyz
-server=/dd315eaa-59f5-11f1.88223163.xyz/system
-alias=/aexgzbgp01.114837322.xyz/dd315eaa-59f5-11f2.88223163.xyz
-server=/dd315eaa-59f5-11f2.88223163.xyz/system
-alias=/aexshbgp01.114837322.xyz/dd315eaa-59f5-11f3.88223163.xyz
-server=/dd315eaa-59f5-11f3.88223163.xyz/system
+alias=/a1973dd7-a509.163cdn-ai.com/28b67842-59fb-11f.163cdn-ai.com
+server=/28b67842-59fb-11f.163cdn-ai.com/system
+alias=/aexbjbgp01.163cdn-ai.com/dd315eaa-59f5-11f1.163cdn-ai.com
+server=/dd315eaa-59f5-11f1.163cdn-ai.com/system
+alias=/aexgzbgp01.163cdn-ai.com/dd315eaa-59f5-11f2.163cdn-ai.com
+server=/dd315eaa-59f5-11f2.163cdn-ai.com/system
+alias=/aexshbgp01.163cdn-ai.com/dd315eaa-59f5-11f3.163cdn-ai.com
+server=/dd315eaa-59f5-11f3.163cdn-ai.com/system
 {% endif %}
 
 [policy]
