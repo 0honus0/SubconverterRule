@@ -6,13 +6,13 @@ allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
-{% if default(request.ytoo_dns, "") == "1" %}
 dns:
   enable: true
   ipv6: false
   listen: 127.0.0.1:1053
   use-hosts: true
   enhanced-mode: fake-ip
+  use-system-hosts: false
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
@@ -93,13 +93,22 @@ dns:
     - api.bilibili.com
     - a.w.bilicdn1.com
     - +.163cdn-ai.com
+
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
+    - tls://119.29.29.29
+    - tls://223.5.5.5
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+{% if default(request.ytoo_dns, "") != "1" %}
   proxy-server-nameserver:
     - 119.29.29.29
     - 223.5.5.5
-
+{% else %}
+  proxy-server-nameserver:
+    - udp://127.0.0.1:1053
 hosts:
   a1973dd7-a509.163cdn-ai.com: 28b67842-59fb-11f.163cdn-ai.com
   aexbjbgp01.163cdn-ai.com: dd315eaa-59f5-11f1.163cdn-ai.com
@@ -271,19 +280,41 @@ profile_img_url=https://yattazen.com/favicon.ico
 dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf, *.icbc.com.cn
 geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_ip_addr? , https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_bili_cn.js
 
+
 [dns]
-;prefer-doh3
-;doh-server = https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
-# > QuantumultX开启IPV6方法,删去下面的「no-ipv6」,在「VPN」栏中,开启「兼容性增强」
-no-ipv6
-no-system
-server=223.5.5.5
 server=119.29.29.29
-server=114.114.114.114
-server=/*.icloud.com/119.29.29.29
-server=/*.icloud.com.cn/119.29.29.29
-server=/*.tencent.com/119.29.29.29
-server=/*.weixin.com/119.29.29.29
+server=223.5.5.5
+server=223.6.6.6
+server=1.0.0.1
+server=8.8.8.8
+
+server=/taobao.com/223.6.6.6
+server=/*.taobao.com/223.6.6.6
+server=/tmall.com/223.6.6.6
+server=/*.tmall.com/223.6.6.6
+server=/jd.com/119.29.29.29
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.28.28.28
+server=/*.alicdn.com/223.5.5.5
+server=/aliyun.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/weixin.com/119.28.28.28
+server=/*.weixin.com/119.28.28.28
+server=/bilibili.com/119.29.29.29
+server=/*.bilibili.com/119.29.29.29
+server=/hdslb.com/119.29.29.29
+server=/163.com/119.29.29.29
+server=/*.163.com/119.29.29.29
+server=/126.com/119.29.29.29
+server=/*.126.com/119.29.29.29
+server=/*.126.net/119.29.29.29
+server=/*.127.net/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/mi.com/119.29.29.29
+server=/*.mi.com/119.29.29.29
+server=/xiaomi.com/119.29.29.29
+server=/*.xiaomi.com/119.29.29.29
 
 {% if default(request.ytoo_dns, "") == "1" %}
 ;y-too
