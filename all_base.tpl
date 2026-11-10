@@ -4,6 +4,7 @@ port: {{ default(global.clash.http_port, "7890") }}
 socks-port: {{ default(global.clash.socks_port, "7891") }}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
+ipv6: false
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
 dns:
@@ -14,6 +15,7 @@ dns:
   enhanced-mode: fake-ip
   use-system-hosts: false
   fake-ip-filter:
+    # Common: local/LAN domains
     - "*.lan"
     - "*.localdomain"
     - "*.example"
@@ -22,6 +24,7 @@ dns:
     - "*.test"
     - "*.local"
     - "*.home.arpa"
+    # Common: time synchronization and NTP
     - time.*.com
     - time.*.gov
     - time.*.edu.cn
@@ -45,10 +48,17 @@ dns:
     - "*.ntp.org.cn"
     - +.pool.ntp.org
     - time1.cloud.tencent.com
+    # Common: STUN
     - stun.*.*
     - stun.*.*.*
+    # Common: Apple and Windows connectivity checks
     - swscan.apple.com
     - mesu.apple.com
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+
+{% if default(request.ytoo_dns, "") == "1" %}
+    # YTOO-only: media, music, game, speed-test and CDN exceptions
     - music.163.com
     - "*.music.163.com"
     - "*.126.net"
@@ -68,8 +78,6 @@ dns:
     - aqqmusic.tc.qq.com
     - amobile.music.tc.qq.com
     - localhost.ptlogin2.qq.com
-    - "*.msftconnecttest.com"
-    - "*.msftncsi.com"
     - "*.xiami.com"
     - "*.music.migu.cn"
     - music.migu.cn
@@ -93,6 +101,7 @@ dns:
     - api.bilibili.com
     - a.w.bilicdn1.com
     - +.163cdn-ai.com
+{% endif %}
 
   nameserver:
     - 119.29.29.29
@@ -102,13 +111,18 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
 
-{% if default(request.ytoo_dns, "") != "1" %}
+{% if default(request.ytoo_dns, "") == "1" %}
+  # YTOO: resolve CDN aliases through the local mihomo DNS listener.
+  proxy-server-nameserver:
+    - udp://127.0.0.1:1053
+{% else %}
+  # Normal subscription: resolve proxy servers directly through public DNS.
   proxy-server-nameserver:
     - 119.29.29.29
     - 223.5.5.5
-{% else %}
-  proxy-server-nameserver:
-    - udp://127.0.0.1:1053
+{% endif %}
+
+{% if default(request.ytoo_dns, "") == "1" %}
 hosts:
   a1973dd7-a509.163cdn-ai.com: 28b67842-59fb-11f.163cdn-ai.com
   aexbjbgp01.163cdn-ai.com: dd315eaa-59f5-11f1.163cdn-ai.com
@@ -282,6 +296,7 @@ geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_i
 
 
 [dns]
+no-ipv6
 server=119.29.29.29
 server=223.5.5.5
 server=223.6.6.6
@@ -317,16 +332,13 @@ server=/xiaomi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
 
 {% if default(request.ytoo_dns, "") == "1" %}
-;y-too
-# > 机场使用
+# YTOO-only: map subscription hostnames to the CDN aliases.
 alias=/a1973dd7-a509.163cdn-ai.com/28b67842-59fb-11f.163cdn-ai.com
-server=/28b67842-59fb-11f.163cdn-ai.com/system
 alias=/aexbjbgp01.163cdn-ai.com/dd315eaa-59f5-11f1.163cdn-ai.com
-server=/dd315eaa-59f5-11f1.163cdn-ai.com/system
 alias=/aexgzbgp01.163cdn-ai.com/dd315eaa-59f5-11f2.163cdn-ai.com
-server=/dd315eaa-59f5-11f2.163cdn-ai.com/system
 alias=/aexshbgp01.163cdn-ai.com/dd315eaa-59f5-11f3.163cdn-ai.com
-server=/dd315eaa-59f5-11f3.163cdn-ai.com/system
+{% else %}
+# Normal subscription: use the common DNS servers above without YTOO aliases.
 {% endif %}
 
 [policy]
